@@ -5,6 +5,8 @@ router.get('/', function(req, res){
     res.render('home-guest')
 }) 
 
+
+
 module.exports = router
 
 
