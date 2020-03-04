@@ -8,6 +8,7 @@ const router = require('./router')
 console.log(router)
 
 
+app.use('/', router) 
 app.use(express.static('public'))
 // the first parameter because it's an express option 
 // the second argeument can be anything but because we name our folder views 
