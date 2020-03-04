@@ -7,8 +7,9 @@ const app = express()
 const router = require('./router')
 console.log(router)
 
-
+// using the base and use the router file we created. 
 app.use('/', router) 
+// using the css
 app.use(express.static('public'))
 // the first parameter because it's an express option 
 // the second argeument can be anything but because we name our folder views 
@@ -21,6 +22,10 @@ app.set('view engine', 'ejs')
 // the first argument is / which is going to be our base of our site and then
 // the second argument is router 
 app.use("/", router)
+
+/* boiler for summiting data on the web and sending some json data*/
+app.use(express.urlencoded({extended: false}))
+app.use(express.json())
 
 
 app.listen(3000)

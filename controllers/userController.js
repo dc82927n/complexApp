@@ -4,7 +4,30 @@ exports.login = function() {
 
 }
 
+
+
+
+exports.register = function(req, res) {
+    console.log("hello this is a test if we can access the data")
+    res.send('thank you for registering')
+}
+
+
+
 exports.home = function(req, res) {
     res.render('home-guest')
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
